@@ -59,6 +59,8 @@ body {
 .post {
   text-decoration: none;
   color: #ffffff;
+  padding: 5px 10px;
+  display: block;
 }
 
 .post:hover {
@@ -71,7 +73,6 @@ body {
 
 .logoutButton {
   color: #0000cd;
-  padding: 5px 10px;
   height: auto;
   background-color: #b0c4de;
   border: none;
@@ -80,7 +81,6 @@ body {
 
 .mypageButton {
     color: #0000cd;
-    padding: 5px 10px;
     height: auto;
     background-color: #b0c4de;
     border: none;
@@ -89,7 +89,6 @@ body {
 
 .loginButton {
   color: #0000cd;
-  padding: 5px 10px;
   height: auto;
   background-color: #b0c4de;
   border: none;
@@ -103,7 +102,6 @@ body {
 
 .signupButton {
   color: #0000cd;
-  padding: 5px 10px;
   height: auto;
   background-color: #f0e68c;
   border: none;
