@@ -11,6 +11,39 @@
   </head>
 
   <body>
+  <header class="header"> 
+    <div class="title">
+      <h1 class="titleLogo"><%= link_to "ミンパク", "/", class: 'titleLogo' %></h1>
+    </div>
+    <div class="navigation">
+      <% if user_signed_in? %>
+      <div class="userNav">
+        <div class="userName">
+          <p>ようこそ、 <%= current_user.name %> さん。</p>
+        </div>
+        <div class="buttons">
+          <button class="logoutButton"><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post' %></button>
+          <button class="mypageButton"><%= link_to "マイページ", class: 'post' %></button>
+        </div>
+      </div>
+      <% else %>
+        <div class="guestNav">
+          <div class="guestName">
+            <p>ようこそ、ゲストさん。</p>
+          </div>
+          <div class="buttons">
+            <button class="loginButton"><%= link_to "ログイン", new_user_session_path, class: 'post' %></button>
+            <button class="signupButton"><%= link_to "新規登録", new_user_registration_path, class: 'post' %></button>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+
+  </header>
     <%= yield %>
+    <footer class="footer">
+      <p>© 2022 Rui Miyamori</p>
+    </footer>
   </body>
 </html>
