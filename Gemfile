@@ -60,3 +60,4 @@ gem 'devise'
 
 # deviseの日本語化
 gem 'devise-i18n'
+gem 'rails-i18n'
