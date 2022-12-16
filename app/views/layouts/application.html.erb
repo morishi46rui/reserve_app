@@ -23,7 +23,7 @@
           </div>
           <div class="buttons">
             <button class="logoutButton"><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post' %></button>
-            <button class="mypageButton"><%= link_to "マイページ", class: 'post' %></button>
+            <button class="mypageButton"><%= link_to "マイページ", dashboard_path, class: 'post' %></button>
           </div>
         </div>
         <% else %>
