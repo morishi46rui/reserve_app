@@ -1,2 +1,29 @@
-<h1>Users#dashboard</h1>
-<p>Find me in app/views/users/dashboard.html.erb</p>
+<section class="section">
+  <div class="container">
+    <!-- アバター -->
+    <div class="icon">
+      <figure class="">
+        <%= image_tag 'icon_default_avatar.jpg' %>
+      </figure>
+    </div>
+   
+    <div class="cardContent">
+      <div class="userContent">
+        <p class="userName">
+          <%= current_user.name %>
+        </p>
+        <!-- 画像アップロードボタン -->
+        <button class="iconUploadButton">アバター画像アップロード</button>
+      </div>
+      <hr class="h-10">
+    </div>
+   
+    <!-- 自己紹介 -->
+    <div class="selfIntroduction">
+      <p>自己紹介
+        <%= current_user.about %>
+      </p>
+    </div>
+  
+  </div>
+</section>
